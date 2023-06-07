@@ -10,7 +10,7 @@ loader.style.display = "none";
 const createURL = () => {
   const selectedCurrency = select.value;
   const URL =
-    "http://api.nbp.pl/api/exchangerates/rates/a/" + selectedCurrency + "/";
+    "https://api.nbp.pl/api/exchangerates/rates/a/" + selectedCurrency + "/";
   return URL;
 };
 
