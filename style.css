@@ -1,0 +1,83 @@
+.gradient-bg {
+  background: linear-gradient(to bottom, white 0%, rgb(130, 188, 209) 100%)
+    no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#box {
+  height: 500px;
+  width: 700px;
+  border: 3px solid orangered;
+  border-radius: 15px;
+  background-color: rgba(235, 255, 253, 0.733);
+  box-shadow: rgb(102, 106, 107);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container:nth-of-type(1) {
+  margin: 70px;
+}
+.container:nth-of-type(2) {
+  margin: 0 30px;
+}
+
+.img {
+  height: 130px;
+  width: 130px;
+}
+.title {
+  margin-top: 50px;
+  color: orangered;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.input-amount {
+  height: 42px;
+  width: 190px;
+  font-size: 18px;
+  border: 3px solid orangered;
+}
+.select-currency {
+  height: 50px;
+  width: 100px;
+  font-size: 18px;
+  border: 3px solid orangered;
+}
+
+.btn-count {
+  height: 50px;
+  width: 100px;
+  font-size: 18px;
+  border: 3px solid orangered;
+  background-color: white;
+}
+
+.output-value {
+  height: 50px;
+  width: 170px;
+  color: orangered;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  border-bottom: 3px solid orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ftr {
+  margin-top: 10px;
+  color: rgb(175, 228, 238);
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}

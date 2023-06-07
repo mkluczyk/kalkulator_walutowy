@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Przelicznik walut</title>
+  </head>
+  <body class="gradient-bg">
+    <div id="box">
+      <div class="container">
+        <img class="img" src="money.png" alt="Logo przelicznik walut" />
+        <h1 class="title">PRZELICZNIK WALUT</h1>
+      </div>
+      <div class="container">
+        <input
+          class="input-amount"
+          placeholder="Wpisz kwotę w PLN"
+          type="number"
+          min="0"
+        />
+        <select class="select-currency">
+          <option value="eur">EUR</option>
+          <option value="usd">USD</option>
+          <option value="chf">CHF</option>
+        </select>
+        <button class="btn-count">Przelicz</button>
+        <span class="output-value"></span>
+      </div>
+    </div>
+    <footer id="ftr">
+      <p>Obraz logo autorstwa vectorjuice na Freepik</p>
+      <p>Business and finance icons autorstwa mangsaabguru - Flaticon</p>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
