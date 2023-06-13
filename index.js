@@ -4,7 +4,7 @@ const inputAmount = document.querySelector(".input-amount");
 const countingButton = document.querySelector(".btn-count");
 const select = document.querySelector(".select-currency");
 const outputValue = document.querySelector(".output-value");
-const loader = document.querySelector("#loader");
+const loader = document.querySelector(".loader");
 loader.style.display = "none";
 
 const createURL = () => {
