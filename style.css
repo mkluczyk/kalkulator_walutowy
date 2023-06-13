@@ -11,7 +11,7 @@
   margin: 0;
 }
 
-#box {
+.box {
   height: 500px;
   width: 700px;
   border: 3px solid orangered;
@@ -62,7 +62,7 @@
   background-color: white;
 }
 
-#loader {
+.loader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +98,7 @@
   align-items: center;
 }
 
-#ftr {
+.ftr {
   margin-top: 10px;
   color: rgb(175, 228, 238);
   font-style: italic;

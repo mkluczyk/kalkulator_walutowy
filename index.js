@@ -15,17 +15,22 @@ const createURL = () => {
 };
 
 const getCurrencyCounter = () => {
+  const inputValue = inputAmount.value;
+  if (isNaN(inputValue) || inputValue <= 0) {
+    window.alert("Wpisz poprawną wartość");
+    return;
+  }
+  loader.style.display = "block";
   const URL = createURL();
   fetch(URL)
     .then((response) => response.json())
     .then((data) => {
-      const currencyValue = data.rates[0].mid;
-      const inputValue = inputAmount.value;
-      if (!isNaN(inputValue) && inputValue > 0) {
+      if (data.rates?.length > 0) {
+        const currencyValue = data.rates[0].mid;
         const calculatedValue = currencyValue * inputValue;
         outputValue.textContent = `TO ${calculatedValue.toFixed(2)} PLN`;
       } else {
-        inputAmount.setCustomValidity("Wpisz poprawną wartość");
+        outputValue.textContent = "Wystąpił błąd";
       }
       loader.style.display = "none";
     })
@@ -35,8 +40,4 @@ const getCurrencyCounter = () => {
     });
 };
 
-select.addEventListener("change", createURL);
-countingButton.addEventListener("click", () => {
-  loader.style.display = "block";
-  getCurrencyCounter();
-});
+countingButton.addEventListener("click", getCurrencyCounter);
