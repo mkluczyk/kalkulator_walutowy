@@ -22,7 +22,7 @@
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .container:nth-of-type(1) {
   margin: 60px 10px;
@@ -44,7 +44,7 @@
 }
 .input-amount {
   height: 30px;
-  width: 55px;
+  width: 60px;
   font-size: 11px;
   font-weight: bold;
   border: 2px solid rgb(151, 80, 54);
@@ -202,11 +202,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    justify-content: space-evenly;
-  }
   .box {
-    height: 600px;
     min-width: 650px;
   }
   .container:nth-of-type(1) {
