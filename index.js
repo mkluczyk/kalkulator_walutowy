@@ -28,7 +28,7 @@ const getCurrencyCounter = () => {
       if (data.rates?.length > 0) {
         const currencyValue = data.rates[0].mid;
         const calculatedValue = currencyValue * inputValue;
-        outputValue.textContent = `TO ${calculatedValue.toFixed(2)} PLN`;
+        outputValue.textContent = `${calculatedValue.toFixed(2)} PLN`;
       } else {
         outputValue.textContent = "Wystąpił błąd";
       }

@@ -1,8 +1,7 @@
 .gradient-bg {
-  background: linear-gradient(to bottom, white 0%, rgb(130, 188, 209) 100%)
-    no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+  background-image: url(kolaz.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,12 +12,12 @@
 }
 
 .box {
-  height: 500px;
-  width: 700px;
-  border: 3px solid orangered;
+  background-color: rgba(213, 190, 190, 0.764);
+  height: 400px;
+  border: 3px solid rgb(23, 52, 62);
   border-radius: 15px;
-  background-color: rgba(235, 255, 253, 0.733);
   box-shadow: 2px 2px 4px rgb(102, 106, 107);
+  margin: 0 20px;
 }
 .container {
   display: flex;
@@ -26,40 +25,49 @@
   justify-content: space-between;
 }
 .container:nth-of-type(1) {
-  margin: 70px;
+  margin: 60px 10px;
 }
 .container:nth-of-type(2) {
-  margin: 0 30px;
+  margin: 0 5px;
 }
 
 .img {
-  height: 130px;
-  width: 130px;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
 }
 .title {
-  margin-top: 50px;
-  color: orangered;
-  font-size: 35px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px white;
 }
 .input-amount {
-  height: 42px;
-  width: 190px;
-  font-size: 18px;
-  border: 3px solid orangered;
+  height: 30px;
+  width: 55px;
+  font-size: 11px;
+  font-weight: bold;
+  border: 2px solid rgb(151, 80, 54);
+  margin-right: 5px;
 }
 .select-currency {
-  height: 50px;
-  width: 100px;
-  font-size: 18px;
-  border: 3px solid orangered;
+  height: 36px;
+  width: 50px;
+  font-size: 11px;
+  font-weight: bold;
+  border: 2px solid rgb(151, 80, 54);
+  margin-right: 5px;
 }
 
 .btn-count {
-  height: 50px;
-  width: 100px;
-  font-size: 18px;
-  border: 3px solid orangered;
+  height: 36px;
+  width: 60px;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid rgb(151, 80, 54);
   background-color: white;
+  margin-right: 5px;
 }
 
 .loader {
@@ -68,10 +76,10 @@
   align-items: center;
 
   border: 4px solid #f3f3f3;
-  border-top: 4px solid #3498db;
+  border-top: 4px solid rgb(151, 80, 54);
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   animation: spin 1s linear infinite;
   margin: 20px auto;
 }
@@ -86,19 +94,199 @@
 }
 
 .output-value {
-  height: 50px;
-  width: 170px;
-  color: orangered;
+  height: 35px;
+  width: 70px;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px white;
   font-weight: bold;
-  font-size: 22px;
-  border-bottom: 3px solid orangered;
+  font-size: 12px;
+  border-bottom: 2px solid rgb(151, 80, 54);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .ftr {
-  margin-top: 10px;
-  color: rgb(175, 228, 238);
+  margin-top: 7px;
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px gray;
   font-style: italic;
+}
+
+@media screen and (min-width: 360px) {
+  .box {
+    height: 500px;
+  }
+  .container:nth-of-type(1) {
+    margin: 70px 20px;
+  }
+  .container:nth-of-type(2) {
+    margin: 0 10px;
+  }
+  .img {
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+  }
+  .title {
+    font-size: 19px;
+  }
+  .input-amount {
+    height: 40px;
+    width: 70px;
+    font-size: 13px;
+  }
+  .select-currency {
+    height: 45px;
+    width: 60px;
+    font-size: 13px;
+  }
+
+  .btn-count {
+    height: 45px;
+    width: 70px;
+    font-size: 13px;
+  }
+
+  .loader {
+    width: 20px;
+    height: 20px;
+  }
+  .output-value {
+    height: 45px;
+    width: 80px;
+    font-size: 14px;
+  }
+
+  .ftr {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .container:nth-of-type(1) {
+    margin: 80px 20px;
+  }
+
+  .img {
+    height: 80px;
+    width: 80px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .input-amount {
+    width: 100px;
+    font-size: 15px;
+  }
+  .select-currency {
+    width: 70px;
+    font-size: 15px;
+  }
+
+  .btn-count {
+    width: 80px;
+    font-size: 15px;
+  }
+
+  .loader {
+    width: 22px;
+    height: 22px;
+  }
+  .output-value {
+    width: 100px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    justify-content: space-evenly;
+  }
+  .box {
+    height: 600px;
+    min-width: 650px;
+  }
+  .container:nth-of-type(1) {
+    margin: 100px 20px;
+  }
+  .img {
+    height: 100px;
+    width: 100px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .input-amount {
+    height: 60px;
+    width: 170px;
+    font-size: 20px;
+    border: 3px solid rgb(151, 80, 54);
+  }
+  .select-currency {
+    height: 66px;
+    width: 90px;
+    font-size: 20px;
+    border: 3px solid rgb(151, 80, 54);
+  }
+
+  .btn-count {
+    height: 66px;
+    width: 100px;
+    font-size: 20px;
+    border: 3px solid rgb(151, 80, 54);
+  }
+
+  .output-value {
+    height: 66px;
+    width: 150px;
+    font-size: 22px;
+    border-bottom: 3px solid rgb(151, 80, 54);
+  }
+
+  .ftr {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .box {
+    min-width: 800px;
+  }
+
+  .img {
+    height: 130px;
+    width: 130px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .input-amount {
+    width: 210px;
+    font-size: 26px;
+    border: 3px solid rgb(151, 80, 54);
+  }
+  .select-currency {
+    width: 120px;
+    font-size: 26px;
+    border: 3px solid rgb(151, 80, 54);
+  }
+
+  .btn-count {
+    width: 140px;
+    font-size: 26px;
+    border: 3px solid rgb(151, 80, 54);
+  }
+
+  .output-value {
+    width: 230px;
+    font-size: 28px;
+    border-bottom: 3px solid rgb(151, 80, 54);
+  }
+
+  .ftr {
+    font-size: 18px;
+  }
 }
