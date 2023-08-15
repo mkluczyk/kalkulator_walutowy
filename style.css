@@ -1,4 +1,4 @@
-.gradient-bg {
+.bg-img {
   background-image: url(kolaz.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,49 +19,62 @@
   box-shadow: 2px 2px 4px rgb(102, 106, 107);
   margin: 0 20px;
 }
+
 .container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
+
 .container:nth-of-type(1) {
-  margin: 60px 10px;
+  margin: 60px 10px 30px;
 }
+
 .container:nth-of-type(2) {
-  margin: 0 5px;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 5px 70px;
 }
 
 .img {
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   margin-right: 10px;
 }
+
 .title {
   color: rgb(0, 0, 0);
   font-size: 15px;
   font-weight: bold;
   text-shadow: 1px 1px white;
 }
+
 .input-amount {
-  height: 30px;
-  width: 60px;
+  height: 35px;
+  width: 90%;
+  box-sizing: border-box;
   font-size: 11px;
   font-weight: bold;
+  text-align: center;
   border: 2px solid rgb(151, 80, 54);
   margin-right: 5px;
 }
+
 .select-currency {
-  height: 36px;
-  width: 50px;
+  height: 35px;
+  width: 90%;
+  box-sizing: border-box;
   font-size: 11px;
   font-weight: bold;
+  text-align: center;
   border: 2px solid rgb(151, 80, 54);
   margin-right: 5px;
 }
 
 .btn-count {
-  height: 36px;
-  width: 60px;
+  height: 35px;
+  width: 90%;
+  box-sizing: border-box;
   font-size: 11px;
   font-weight: bold;
   text-align: center;
@@ -74,7 +87,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   border: 4px solid #f3f3f3;
   border-top: 4px solid rgb(151, 80, 54);
   border-radius: 50%;
@@ -95,7 +107,8 @@
 
 .output-value {
   height: 35px;
-  width: 70px;
+  width: 90%;
+  box-sizing: border-box;
   color: rgb(0, 0, 0);
   text-shadow: 1px 1px white;
   font-weight: bold;
@@ -107,45 +120,48 @@
 }
 
 .ftr {
-  margin-top: 7px;
   font-size: 10px;
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 1px gray;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px rgb(255, 255, 255);
   font-style: italic;
+  text-align: center;
 }
 
 @media screen and (min-width: 360px) {
   .box {
     height: 500px;
   }
+
   .container:nth-of-type(1) {
-    margin: 70px 20px;
+    margin: 70px 20px 30px;
   }
+
   .container:nth-of-type(2) {
-    margin: 0 10px;
+    margin: 0 10px 90px;
   }
+
   .img {
     height: 65px;
     width: 65px;
     margin-right: 15px;
   }
+
   .title {
     font-size: 19px;
   }
+
   .input-amount {
-    height: 40px;
-    width: 70px;
+    height: 45px;
     font-size: 13px;
   }
+
   .select-currency {
     height: 45px;
-    width: 60px;
     font-size: 13px;
   }
 
   .btn-count {
     height: 45px;
-    width: 70px;
     font-size: 13px;
   }
 
@@ -153,41 +169,50 @@
     width: 20px;
     height: 20px;
   }
+
   .output-value {
     height: 45px;
-    width: 80px;
     font-size: 14px;
   }
 
   .ftr {
     font-size: 12px;
-    color: rgb(255, 255, 255);
   }
 }
 
 @media screen and (min-width: 540px) {
+  .box {
+    min-width: 450px;
+  }
   .container:nth-of-type(1) {
-    margin: 80px 20px;
+    margin: 80px 20px 30px;
+  }
+
+  .container:nth-of-type(2) {
+    margin: 0 5px 70px;
   }
 
   .img {
     height: 80px;
     width: 80px;
   }
+
   .title {
     font-size: 22px;
   }
+
   .input-amount {
-    width: 100px;
+    width: 75%;
     font-size: 15px;
   }
+
   .select-currency {
-    width: 70px;
+    width: 75%;
     font-size: 15px;
   }
 
   .btn-count {
-    width: 80px;
+    width: 75%;
     font-size: 15px;
   }
 
@@ -195,8 +220,9 @@
     width: 22px;
     height: 22px;
   }
+
   .output-value {
-    width: 100px;
+    width: 75%;
     font-size: 16px;
   }
 }
@@ -205,39 +231,49 @@
   .box {
     min-width: 650px;
   }
+
   .container:nth-of-type(1) {
-    margin: 100px 20px;
+    margin: 70px 20px 60px;
   }
+
+  .container:nth-of-type(2) {
+    flex-direction: row;
+    margin: 0 5px 175px;
+  }
+
   .img {
     height: 100px;
     width: 100px;
   }
+
   .title {
     font-size: 30px;
   }
+
   .input-amount {
     height: 60px;
     width: 170px;
     font-size: 20px;
     border: 3px solid rgb(151, 80, 54);
   }
+
   .select-currency {
-    height: 66px;
+    height: 60px;
     width: 90px;
     font-size: 20px;
     border: 3px solid rgb(151, 80, 54);
   }
 
   .btn-count {
-    height: 66px;
+    height: 60px;
     width: 100px;
     font-size: 20px;
     border: 3px solid rgb(151, 80, 54);
   }
 
   .output-value {
-    height: 66px;
-    width: 150px;
+    height: 60px;
+    width: 170px;
     font-size: 22px;
     border-bottom: 3px solid rgb(151, 80, 54);
   }
@@ -252,34 +288,41 @@
     min-width: 800px;
   }
 
+  .container:nth-of-type(1) {
+    margin: 60px 20px;
+  }
+
+  .container:nth-of-type(2) {
+    margin: 0 5px 145px;
+  }
+
   .img {
     height: 130px;
     width: 130px;
   }
+
   .title {
     font-size: 36px;
   }
+
   .input-amount {
     width: 210px;
     font-size: 26px;
-    border: 3px solid rgb(151, 80, 54);
   }
+
   .select-currency {
     width: 120px;
     font-size: 26px;
-    border: 3px solid rgb(151, 80, 54);
   }
 
   .btn-count {
     width: 140px;
     font-size: 26px;
-    border: 3px solid rgb(151, 80, 54);
   }
 
   .output-value {
     width: 230px;
     font-size: 28px;
-    border-bottom: 3px solid rgb(151, 80, 54);
   }
 
   .ftr {
